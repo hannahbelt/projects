@@ -1,7 +1,7 @@
-#need to figure this one out.
-#Having a lot o difficulties
 
-error_input = "Error, Please enter a numeric input"
+
+def computepay(hours, rate):
+    error_input = "Error, Please enter a numeric input"
 
 hours = raw_input('Enter hours: ')
 try:
@@ -32,3 +32,7 @@ pay = extrapay + hours * rate
 
 print('Pay:'),
 print(pay)
+
+computepay(hours,rate)
+
+#hard to tell a difference with this one andknow it actually worked
