@@ -1,26 +1,27 @@
-total = 0
-count = 0
-
+count=0
+total=0
+average=0
 while True:
-    x = raw_input('Enter a number: ')
+    line=input('Enter a number: ')
     try:
-        float(x)>=0
-        if x == 'done':
-         break
-        
-        
-
+        line=float(line)
+        total=total + line
+        count=count+1
+        average=total/count
     except:
-        print('ERROR: input')
+        if line == 'done':
+            break
+        else:
+            print('ERROR: input')
+            continue
+print(count, total, average)
         
-value = float(x)
-sum = sum + value
-count = count + 1
-average = sum / count
-print(sum, count, average)
 
 
 
 #it lets me continuously enter numbers, but when I type done, it gives
 #me the ERROR:input?????
 
+# now it says 'done' isn't defined??
+
+# IT WORKS  but only when 'done' is entered, not done
