@@ -3,20 +3,16 @@ total=0
 average=0
 while True:
     line=input('Enter a number: ')
+    if line == 'done':
+        break
     try:
         line=float(line)
         total=total + line
         count=count+1
         average=total/count
     except:
-        if line == 'done':
-            break
-        else:
-            print('ERROR: input')
-            continue
+        print('ERROR: input')
 print(count, total, average)
-        
-
 
 
 #it lets me continuously enter numbers, but when I type done, it gives
