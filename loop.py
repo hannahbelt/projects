@@ -21,3 +21,4 @@ print(count, total, average)
 # now it says 'done' isn't defined??
 
 # IT WORKS  but only when 'done' is entered, not done
+#the apostrophes have to be includesd. I can't figure out why
