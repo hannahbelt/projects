@@ -5,5 +5,3 @@ tempF = (float(tempC) * 1.8) + 32
 # and then I realized it's because decimals 
 # are in 1.8 so it needed float.
 print('This equals', tempF, 'degrees Fahrenheit'),
-
-#NEW STUFF JKHSFJHSDFK
