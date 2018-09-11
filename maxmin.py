@@ -1,8 +1,8 @@
 largest = None
 smallest = None
-print 'Awaiting input:', largest
+print ('Awaiting input:', largest)
 while True:
-  line = raw_input('Enter a number: ')
+  line = input('Enter a number: ')
   if line == 'done':
     break
   try:
@@ -10,10 +10,10 @@ while True:
       itervar = float(line)
       if largest is None or itervar > largest:
         largest = itervar
-      print 'Largest_number:', largest
+      print ('Largest_number:', largest)
       if smallest is None or itervar < smallest:
         smallest = itervar
-      print 'smallest_number:', smallest
+      print ('smallest_number:', smallest)
   except:
       print ('Error: input')
 
