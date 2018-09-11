@@ -3,20 +3,20 @@
 def computepay(hours, rate):
     error_input = "Error, Please enter a numeric input"
 
-hours = raw_input('Enter hours: ')
+hours = input('Enter hours: ')
 try:
 # wasn't sure what to put with "try". got some help with google
     float(hours)>=0
 except:
     print (error_input)
-    hours = raw_input('Enter hours: ')
+    hours = input('Enter hours: ')
 
-rate = raw_input('Enter rate per hour: ')
+rate = input('Enter rate per hour: ')
 try:
     float(rate)>=0
 except:
     print(error_input)
-    hours = raw_input('Enter rate per hour: ')
+    hours = input('Enter rate per hour: ')
 
 hours = float(hours)
 rate = float(rate)
