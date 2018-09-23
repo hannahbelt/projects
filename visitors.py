@@ -30,7 +30,10 @@ for row in table.findAll('tr'):
         for cell in row.findAll('div'):
             # add it to the list of cells
             list_of_cells.append(cell.text)
-print(list_of_cells)      
+    #print(list_of_cells)
+    list_of_rows.append(list_of_cells)
+for row in list_of_rows:
+    print(row)
 
         # if this isn't empty
         #if list_of_cells:
@@ -53,21 +56,10 @@ print(list_of_cells)
 # write
 #def write_file(data, column_names, file_location):
     # open a file in which to store the data
-#outfile = open('data/visitors.csv', 'w+')
-    #with open('visitors.csv', 'w+') as outfile:
-#writer = csv.writer(outfile)
-#writer.writerow(['Park', 'Rank', 'Recreation Visits', 'Percent of Total'])
-        # make sure at a minimum we don't have more columns of data than headers for columns
-    #if len(['Park', 'Rank', 'Recreation Visits', 'Percent of Total']) >= len(data[0]):
-            # prepare to write to it as a csv file
-#writer = csv.writer(outfile)
-            # write the first row as the headers we want
-#writer.writerow(['Park', 'Rank', 'Recreation Visits', 'Percent of Total'])
-
-            # write the rows of data
-#writer.writerows(list_of_rows)
-    #else:
-       # print('So close. There are not enough column names {len(column_names)} for all the cells in the row ({len(data[0])}).')
+outfile = open('data/visitors.csv', 'w+')
+writer = csv.writer(outfile)
+writer.writerow(['Park', 'Rank', 'Recreation Visits', 'Percent of Total'])
+writer.writerows(list_of_rows)
 
 
 # do everything all together
