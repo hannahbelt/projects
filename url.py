@@ -17,12 +17,19 @@ nat_park_ids = [
     'GWCA'
 ]
 
+#url components
+url_stub = 'https://irma.nps.gov'
+
+nps_uri = '/Stats/MvcReportViewer.aspx?_id=6d4c57ec-773a-4be8-a7d7-4410daaa91ad&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fMonthly+Visitation+Comments+By+Park&_39=880px&Park='
+
+def build_url_list():
 # main loop
-data_dicts = {}
-for park in nat_park_ids:
-    full_url = f'{url_stub}{nps_uri}{park}'
-    #print(full_url)
-    # build url
+    data_dicts = {}
+    for park in nat_park_ids:
+        full_url = f'{url_stub}{nps_uri}{park}'
+        #print(full_url)
+        # build url
+        data_dicts.append(full_url)
 
 # def get
 def get_page_content(full_url):
@@ -100,14 +107,4 @@ if __name__== '__main__':
     nps_uri = '/Stats/MvcReportViewer.aspx?_id=6d4c57ec-773a-4be8-a7d7-4410daaa91ad&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fMonthly+Visitation+Comments+By+Park&_39=880px&Park='
     scrape_park_comments(full_url, filename, row_names)
 
-    ___________
-    def scrape_park_comments(full_url):
-        all_data = {}
-        url_list = build_url_list(url_stub, nps_uri, nat_park_ids)
-            for url in url_list:
-                something = get_page_content(url)
-                stuff = parse_html(something)
-                data = extract_data(stuff)
-                all_data[url] = data
-
-            write_file(all_data, blah, blahblah)
+  
