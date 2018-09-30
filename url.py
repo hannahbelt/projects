@@ -92,13 +92,13 @@ def write_file(data, row_names, file_location):
 def scrape_park_comments(full_url):
     all_data = {}
     url_list = build_url_list(url_stub, nps_uri, nat_park_ids)
-        for url in url_list:
-            content = get_page_content(full_url)
-            formatted_html = parse_html(content)
-            data = extract_data(formatted_html)
-            all_data[url] = data
+    for url in url_list:
+        content = get_page_content(full_url)
+        formatted_html = parse_html(content)
+        data = extract_data(formatted_html)
+        all_data[url] = data
 
-        write_file(all_data, data, formatted_html, content)
+    write_file(all_data, data, formatted_html, content)
 
 if __name__== '__main__':
     nat_park_ids = '/Stats/MvcReportViewer.aspx?_id=6d4c57ec-773a-4be8-a7d7-4410daaa91ad&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fMonthly+Visitation+Comments+By+Park&_39=880px&Park='
@@ -110,6 +110,6 @@ if __name__== '__main__':
     url_stub = 'https://irma.nps.gov'
 
     nps_uri = '/Stats/MvcReportViewer.aspx?_id=6d4c57ec-773a-4be8-a7d7-4410daaa91ad&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fMonthly+Visitation+Comments+By+Park&_39=880px&Park='
-    scrape_park_comments(full_url, filename, row_names)
+   
 
   
