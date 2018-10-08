@@ -6,7 +6,7 @@ import requests
 from secret_settings import geojson_stub, geojson_key
 
 
-def ping_api(address):
+def get_api(address):
     p = {'address': address, 'key': geojson_key}
     # print(requests.get(geojson_stub, params=p))
     return requests.get(geojson_stub, params=p)
@@ -18,7 +18,7 @@ def get_geolocation_data(address):
         state_short = ''
         country = ''
 
-        response = ping_api(address)
+        response = get_api(address)
         if response.status_code == 200:
             # print(response.json())
 
@@ -46,7 +46,7 @@ def get_geolocation_data(address):
 
                 geolocator['clean_address'] = response.json()['results'][0]['formatted_address']
                 geolocator['latitude'] = response.json()['results'][0]['geometry']['location']['lat']
-                geolocator['longitude'] = response.json()['results'][0]['geometry']['location']['lng']
+                geolocator['longitude'] = response.json()['results'][0]['geometry']['location']['long']
                 geolocator['county'] = county
                 geolocator['state_long'] = state_long
                 geolocator['state_short'] = state_short
@@ -63,7 +63,7 @@ def write_output_sentence(geolocator):
     # print(geolocator)
     print(f'The address for the Media Innovation Center is {geolocator["clean_address"][:-5]}, at latitude {geolocator["latitude"]} and longitude {geolocator["longitude"]}, in {geolocator["county"]}, {geolocator["state_long"]}, {geolocator["country"]}.')
 
-
+# 
 def geolocate(address):
     geolocator_data = get_geolocation_data(address)
     if geolocator_data:
