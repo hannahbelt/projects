@@ -13,7 +13,7 @@ def pull_api(address):
     return requests.get(geojson_stub, params=p)
 
 
-# creates function to 
+# creates function to name the data
 def get_geolocation_data(address):
         county = ''
         state_long = ''
@@ -24,8 +24,6 @@ def get_geolocation_data(address):
         if response.status_code == 200:
             # print(response.json())
 
-            # addresses are self-reported and human-entered; they will always be
-            # a little messy and the API will always miss a few
             try:
                 #['address_components'])
                 address_components = response.json()['results'][0]['address_components']
