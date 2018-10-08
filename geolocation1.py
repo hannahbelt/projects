@@ -1,12 +1,13 @@
 #!usr/local/bin/env python3
 
 # external imports
+from pprint import pprint
 import requests
 # project-level imports
 from secret_settings import geojson_stub, geojson_key
 
 
-def get_api(address):
+def ping_api(address):
     p = {'address': address, 'key': geojson_key}
     # print(requests.get(geojson_stub, params=p))
     return requests.get(geojson_stub, params=p)
@@ -18,7 +19,7 @@ def get_geolocation_data(address):
         state_short = ''
         country = ''
 
-        response = get_api(address)
+        response = ping_api(address)
         if response.status_code == 200:
             # print(response.json())
 
@@ -46,7 +47,7 @@ def get_geolocation_data(address):
 
                 geolocator['clean_address'] = response.json()['results'][0]['formatted_address']
                 geolocator['latitude'] = response.json()['results'][0]['geometry']['location']['lat']
-                geolocator['longitude'] = response.json()['results'][0]['geometry']['location']['long']
+                geolocator['longitude'] = response.json()['results'][0]['geometry']['location']['lng']
                 geolocator['county'] = county
                 geolocator['state_long'] = state_long
                 geolocator['state_short'] = state_short
