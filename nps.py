@@ -1,5 +1,8 @@
 # python imports
 import json
+import xmletree.ElementTree at ET
+tree = ET.parse('nps_boundary.xml')
+root = tree.getroot()
 # external imports
 import requests
 from bs4 import BeautifulSoup
