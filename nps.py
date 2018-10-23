@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-
+Element.attrib
 #ids
 # need to figure out how to get ALL the ids
 nat_park_ids = [
