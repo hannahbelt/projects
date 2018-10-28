@@ -7,7 +7,8 @@ root = tree.getroot()
 import requests
 from bs4 import BeautifulSoup
 
-
+list_of_ids = []
+for id in something.findAll('placekey')
 #build the urls using code from xml
 # loop through the park codes
 for full_url in 
