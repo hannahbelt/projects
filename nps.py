@@ -8,12 +8,9 @@ import requests
 from bs4 import BeautifulSoup
 
 
-Element.attrib
-#ids
-# need to figure out how to get ALL the ids
-nat_park_ids = [
-    
-]
+#build the urls using code from xml
+# loop through the park codes
+for full_url in 
 
 #url components
 url_stub = 'https://irma.nps.gov'
