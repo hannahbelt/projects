@@ -1,17 +1,33 @@
 # python imports
 import json
-import xmletree.ElementTree at ET
-tree = ET.parse('nps_boundary.xml')
-root = tree.getroot()
+import xml.etree.ElementTree as ET
 # external imports
 import requests
 from bs4 import BeautifulSoup
 
-list_of_ids = []
-for id in something.findAll('placekey')
+file_with_codes = 'data/nps_boundary.xml'
+element_xpath = ''
+attr = 'placekey'
+filename = 'nps_boundary.xml'
+
+def get_park_codes(filename, el_path, attr):
+    tree = ET.parse('nps_boundary.xml')
+    root = tree.getroot()
 #build the urls using code from xml
 # loop through the park codes
-for full_url in 
+    park_nodes = root.findall(el_path)
+
+    nat_park_ids = {}
+    for park in park_nodes:
+        try:
+            park_name = park.find(attr).text
+        
+        except AttributeError:
+            continue
+
+    return nat_park_ids
+
+codes = get_park_codes(file_with_codes,element_xpath, park_name)
 
 #url components
 url_stub = 'https://irma.nps.gov'
