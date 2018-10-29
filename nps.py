@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 file_with_codes = 'data/nps_boundary.xml'
-element_xpath = ''
+element_xpath = './/*attrplacekey/'
 attr = 'placekey'
 filename = 'nps_boundary.xml'
 
@@ -33,6 +33,8 @@ codes = get_park_codes(file_with_codes,element_xpath, park_name)
 url_stub = 'https://irma.nps.gov'
 
 nps_uri = '/Stats/MvcReportViewer.aspx?_id=6d4c57ec-773a-4be8-a7d7-4410daaa91ad&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fMonthly+Visitation+Comments+By+Park&_39=880px&Park='
+
+full_url = f'{url_stub}{nps_uri}{nat_park_ids}'
 
 # build loop for comments
 # skip over comments that dont have errors in them
