@@ -10,23 +10,32 @@ element_xpath = './/*attrplacekey/'
 attr = 'placekey'
 filename = 'nps_boundary.xml'
 
-def get_park_codes(filename, el_path, attr):
-    tree = ET.parse('nps_boundary.xml')
-    root = tree.getroot()
+if element.text == 'National Park System Unit Code Thesaurus':
+    places = element.findall('place')
+    the_right_places = places[1]
+
+
+
+    for place in places:
+        # do something with place.text
+
+
+        tree = ET.parse('nps_boundary.xml')
+        root = tree.getroot()
+print(root)
 #build the urls using code from xml
 # loop through the park codes
-    park_nodes = root.findall(el_path)
+park_nodes = root.findall(el_path)
 
-    nat_park_ids = {}
-    for park in park_nodes:
-        try:
-            park_name = park.find(attr).text
+nat_park_ids = {}
+for park in park_nodes:
+    try:
+        park_name = park.find(attr).text
         
-        except AttributeError:
-            continue
+    except AttributeError:
+        continue
 
-    return nat_park_ids
-
+    
 codes = get_park_codes(file_with_codes,element_xpath, park_name)
 
 #url components
