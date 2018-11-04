@@ -22,7 +22,8 @@ root = tree.getroot()
    # ids = keywords.find('ids').text
 #print(root.findall('idinfo'))
 
-root[1][5][4].text = park_ids
-print(park_ids)
+#print(root[1][5][4].findall)
+root[1][5][4].text
+
 
 #idinfo then keywords then place then placekey
