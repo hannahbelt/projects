@@ -20,4 +20,9 @@ root = tree.getroot()
     #print(child.tag, child.attrib)
     #print(keywords.tag, keywords.attrib)
    # ids = keywords.find('ids').text
-   
+#print(root.findall('idinfo'))
+
+root[1][5][4].text = park_ids
+print(park_ids)
+
+#idinfo then keywords then place then placekey
