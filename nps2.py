@@ -20,9 +20,15 @@ root = tree.getroot()
     #print(child.tag, child.attrib)
     #print(keywords.tag, keywords.attrib)
    # ids = keywords.find('ids').text
-root.findall('idinfo') = idinfo
+#print(root.findall('idinfo'))
+idinfo = root.findall('idinfo')
+key = root.findall('keywords')
+ids = root.findall('place'[1])
+print(ids)
 
-# find within ininfo a variable element called 'keywords'
+
+
+# find within idinfo a variable element called 'keywords'
 
 # find with that variable, the place elements, use index [1] and save to variable
 
