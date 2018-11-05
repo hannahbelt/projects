@@ -25,6 +25,10 @@ idinfo = root.findall('idinfo')
 key = root.findall('keywords')
 place = root.findall('place'[1])
 ids = root.findall('placekey')
+all_ids = []
+for elements in all_ids:
+    all_ids.append(ids.text)
+
 print(ids)
 
 
