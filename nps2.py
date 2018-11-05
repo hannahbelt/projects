@@ -23,7 +23,8 @@ root = tree.getroot()
 #print(root.findall('idinfo'))
 idinfo = root.findall('idinfo')
 key = root.findall('keywords')
-ids = root.findall('place'[1])
+place = root.findall('place'[1])
+ids = root.findall('placekey')
 print(ids)
 
 
