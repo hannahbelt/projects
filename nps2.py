@@ -21,29 +21,37 @@ root = tree.getroot()
     #print(keywords.tag, keywords.attrib)
    # ids = keywords.find('ids').text
 #print(root.findall('idinfo'))
-idinfo = root.findall('idinfo')
-key = root.findall('keywords')
-place = root.findall('place'[1])
-ids = root.findall('placekey')
+idinfo = root.find('idinfo')
+# print(idinfo)
+key = idinfo.find('keywords')
+#print(key)
+place = key.findall('place')[1]
+ids = place.findall('placekey')
 all_ids = []
-for elements in all_ids:
-    all_ids.append(ids.text)
+for element in ids:
+    all_ids.append(element.text)
 
-print(ids)
+url_stub = 'https://irma.nps.gov'
 
+nps_uri = '/Stats/MvcReportViewer.aspx?_id=6d4c57ec-773a-4be8-a7d7-4410daaa91ad&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fMonthly+Visitation+Comments+By+Park&_39=880px&Park='
 
-
-# find within idinfo a variable element called 'keywords'
-
-# find with that variable, the place elements, use index [1] and save to variable
-
-#define an empty list variable
-
-
-#print(root[1][5][4].findall)
-
+#def build_url_list():
+# main loop
+data_dicts = {}
+for park in all_ids:
+    full_url = f'{url_stub}{nps_uri}{park}'
+    #print(full_url)
+    # build url
 
 
 
+#code for the annual visitation rates
+import csv
+# external imports
+import requests
+from bs4 import BeautifulSoup
 
-#idinfo then keywords then place then placekey
+nps_uri_visit = '/Stats/MvcReportViewer.aspx?_id=6e6a7e3e-f0b1-4104-9c2d-6c1869661672&_m=Remote&_r=%2fNPS.Stats.Reports%2fNational+Reports%2fAnnual+Park+Ranking+Report+(1979+-+Last+Calendar+Year)&_39=880px'
+response = requests.get(url)
+html = response.content
+print(response.content)
