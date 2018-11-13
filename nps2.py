@@ -29,7 +29,8 @@ place = key.findall('place')[1]
 ids = place.findall('placekey')
 all_ids = []
 for element in ids:
-    all_ids.append(element.text)
+    if element.text.isupper() and len(element.text) == 4:
+        all_ids.append(element.text)
 
 url_stub = 'https://irma.nps.gov'
 
@@ -48,12 +49,23 @@ for park in all_ids:
 #code for the annual visitation rates
 
 
-nps_uri_visit = '/Stats/MvcReportViewer.aspx?_id=6e6a7e3e-f0b1-4104-9c2d-6c1869661672&_m=Remote&_r=%2fNPS.Stats.Reports%2fNational+Reports%2fAnnual+Park+Ranking+Report+(1979+-+Last+Calendar+Year)&_39=880px'
+nps_uri_visit = '/Stats/MvcReportViewer.aspx?_id=f4ecfcf9-2129-46a0-90c2-0c38c4be0446&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fRecreation+Visitors+By+Month+(1979+-+Last+Calendar+Year)&_39=880px&Park='
 
 data_dicts = {}
 for park in all_ids:
     full_url_visit = f'{url_stub}{nps_uri_visit}{park}'
-response = requests.get(full_url_visit)
-html = response.content
-print(response.content)
+    print(full_url_visit)
+    response = requests.get(full_url_visit)
+    html = response.content
+    #print(html)
+
+    soup = BeautifulSoup(html, 'lxml')
+    table = soup.find('table', attrs={'cols':'4'})
+    #print(soup)
+    #print(table)
+    break
+
+
+
+
 
