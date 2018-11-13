@@ -43,15 +43,17 @@ for park in all_ids:
     #print(full_url)
     # build url
 
-
+#___________________________________
 
 #code for the annual visitation rates
-import csv
-# external imports
-import requests
-from bs4 import BeautifulSoup
+
 
 nps_uri_visit = '/Stats/MvcReportViewer.aspx?_id=6e6a7e3e-f0b1-4104-9c2d-6c1869661672&_m=Remote&_r=%2fNPS.Stats.Reports%2fNational+Reports%2fAnnual+Park+Ranking+Report+(1979+-+Last+Calendar+Year)&_39=880px'
-response = requests.get(url)
+
+data_dicts = {}
+for park in all_ids:
+    full_url_visit = f'{url_stub}{nps_uri_visit}{park}'
+response = requests.get(full_url_visit)
 html = response.content
 print(response.content)
+
