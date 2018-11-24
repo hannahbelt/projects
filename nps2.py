@@ -44,6 +44,8 @@ for park in all_ids:
     #print(full_url)
     # build url
 
+#get comments from each page
+#write jsons for both things
 #___________________________________
 
 #code for the annual visitation rates
@@ -54,17 +56,27 @@ nps_uri_visit = '/Stats/MvcReportViewer.aspx?_id=f4ecfcf9-2129-46a0-90c2-0c38c4b
 data_dicts = {}
 for park in all_ids:
     full_url_visit = f'{url_stub}{nps_uri_visit}{park}'
-    print(full_url_visit)
+    #print(full_url_visit)
     response = requests.get(full_url_visit)
     html = response.content
     #print(html)
 
     soup = BeautifulSoup(html, 'lxml')
-    table = soup.find('table', attrs={'cols':'4'})
+    table = soup.find('table', attrs={'cols':'14'})
     #print(soup)
     #print(table)
-    break
-
+    if table:
+        list_of_rows = []
+        for row in table.findAll('tr'):
+                list_of_cells = []
+    if row.find('div') is not None:
+        for cell in row.findAll('div'):
+            # add it to the list of cells
+                list_of_rows.append(list_of_cells.text)
+                print(list_of_cells.text)
+# for row in list_of_rows:
+#     print(row)
+#     break
 
 
 
