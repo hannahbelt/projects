@@ -45,9 +45,17 @@ for park in all_ids:
     html = response.content
 
     soup = BeautifulSoup(html, 'lxml')
-    table = soup.find('table', attrs={'cols':'4'})
+    table = soup.find('table', attrs={'cols':'2'})
     if table:
-        list_of_dicts
+        list_of_dicts = []
+        for dicts in table.findAll('tr'):
+                list_of_comments = []
+                if dicts.find('div') is not None:
+                        for comments in dicts.findAll('div'):
+                                list_of_comments.append(comments.text)
+                                list_of_dicts.append(list_of_comments)
+        print(list_of_dicts)
+
     #print(full_url)
     # build url
 
@@ -63,7 +71,7 @@ nps_uri_visit = '/Stats/MvcReportViewer.aspx?_id=f4ecfcf9-2129-46a0-90c2-0c38c4b
 data_dicts_visitors = {}
 for park in all_ids:
     full_url_visit = f'{url_stub}{nps_uri_visit}{park}'
-    print(f'VISITING URL: {full_url_visit}')
+    #print(f'VISITING URL: {full_url_visit}')
     response = requests.get(full_url_visit)
     html = response.content
     #print(html)
@@ -82,7 +90,7 @@ for park in all_ids:
                                 list_of_cells.append(cell.text)
                         list_of_rows.append(list_of_cells)
 
-        print(list_of_rows)
+        #print(list_of_rows)
         break
         # for row in list_of_rows:
         #     print(row)
