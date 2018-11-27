@@ -54,7 +54,20 @@ for park in all_ids:
                         for comments in dicts.findAll('div'):
                                 list_of_comments.append(comments.text)
                                 list_of_dicts.append(list_of_comments)
-        print(list_of_dicts)
+        #print(list_of_dicts)
+
+if len(row) == 2:
+        comment = {}
+        comment['date'] = row[0]
+        comment['text'] = row(1)
+        comment['url'] = full_url
+
+        data_dicts_comments[park]['park_comments'].append(comment)
+
+j = json.dumps(data_dicts_comments, sort_keys=True, indent=2)
+#print(j)
+with open('data/park_comments.json', 'w+') as f:
+    print(j, file=f)
 
     #print(full_url)
     # build url
@@ -90,6 +103,9 @@ for park in all_ids:
                                 list_of_cells.append(cell.text)
                         list_of_rows.append(list_of_cells)
 
+if len(row) == 14:
+
+        
         #print(list_of_rows)
         break
         # for row in list_of_rows:
