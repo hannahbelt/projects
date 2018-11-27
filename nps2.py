@@ -1,9 +1,12 @@
 # python imports
 import json
 import xml.etree.ElementTree as ET
+from datetime import date
+from pprint import pprint
 # external imports
 import requests
 from bs4 import BeautifulSoup
+
 
 file_with_codes = 'data/nps_boundary.xml'
 element_xpath = './/*attrplacekey/'
@@ -47,26 +50,33 @@ for park in all_ids:
     soup = BeautifulSoup(html, 'lxml')
     table = soup.find('table', attrs={'cols':'2'})
     if table:
-        list_of_dicts = []
-        for dicts in table.findAll('tr'):
-                list_of_comments = []
-                if dicts.find('div') is not None:
-                        for comments in dicts.findAll('div'):
-                                list_of_comments.append(comments.text)
-                                list_of_dicts.append(list_of_comments)
-        #print(list_of_dicts)
+        list_of_rows = []
+        for row in table.findAll('tr'):
+            list_of_comments = []
+            if row.find('div') is not None:
+                for comments in row.findAll('div'):
+                    list_of_comments.append(comments.text)
+                    
+            list_of_rows.append(list_of_comments)
+        #print(list_of_rows)
 
-if len(row) == 2:
-        comment = {}
-        comment['date'] = row[0]
-        comment['text'] = row(1)
-        comment['url'] = full_url
+        data_dicts_comments[park] = {}
+        data_dicts_comments[park]['url'] = full_url
+        data_dicts_comments[park]['scrape_date'] = f'{date.today()}'
+        data_dicts_comments[park]['park_comments'] = []
 
-        data_dicts_comments[park]['park_comments'].append(comment)
+        for row in list_of_rows[1:]:
+        #     print(row)
+            comment = {}
+            comment['date'] = row[0]
+            comment['text'] = row[1]
+            data_dicts_comments[park]['park_comments'].append(comment)
 
-j = json.dumps(data_dicts_comments, sort_keys=True, indent=2)
+    break
+
+j = json.dumps(data_dicts_comments, sort_keys=True, indent=4)
 #print(j)
-with open('data/park_comments.json', 'w+') as f:
+with open('data/all_park_comments.json', 'w+') as f:
     print(j, file=f)
 
     #print(full_url)
@@ -79,35 +89,36 @@ with open('data/park_comments.json', 'w+') as f:
 #code for the annual visitation rates
 
 
-nps_uri_visit = '/Stats/MvcReportViewer.aspx?_id=f4ecfcf9-2129-46a0-90c2-0c38c4be0446&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fRecreation+Visitors+By+Month+(1979+-+Last+Calendar+Year)&_39=880px&Park='
+# nps_uri_visit = '/Stats/MvcReportViewer.aspx?_id=f4ecfcf9-2129-46a0-90c2-0c38c4be0446&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fRecreation+Visitors+By+Month+(1979+-+Last+Calendar+Year)&_39=880px&Park='
 
-data_dicts_visitors = {}
-for park in all_ids:
-    full_url_visit = f'{url_stub}{nps_uri_visit}{park}'
-    #print(f'VISITING URL: {full_url_visit}')
-    response = requests.get(full_url_visit)
-    html = response.content
-    #print(html)
+# data_dicts_visitors = {}
+# for park in all_ids:
+#     full_url_visit = f'{url_stub}{nps_uri_visit}{park}'
+#     #print(f'VISITING URL: {full_url_visit}')
+#     response = requests.get(full_url_visit)
+#     html = response.content
+#     #print(html)
 
-    soup = BeautifulSoup(html, 'lxml')
-    table = soup.find('table', attrs={'cols':'14'})
-    #print(soup)
-    #print(table)
-    if table:
-        list_of_rows = []
-        for row in table.findAll('tr'):
-                list_of_cells = []
-                if row.find('div') is not None:
-                        for cell in row.findAll('div'):
-                                # add it to the list of cells
-                                list_of_cells.append(cell.text)
-                        list_of_rows.append(list_of_cells)
+#     soup = BeautifulSoup(html, 'lxml')
+#     table = soup.find('table', attrs={'cols':'14'})
+#     #print(soup)
+#     #print(table)
+#     if table:
+#         list_of_rows = []
+#         for row in table.findAll('tr'):
+#                 list_of_cells = []
+#                 if row.find('div') is not None:
+#                         for cell in row.findAll('div'):
+#                                 # add it to the list of cells
+#                                 list_of_cells.append(cell.text)
+#                         list_of_rows.append(list_of_cells)
 
-if len(row) == 14:
+                
 
-        
-        #print(list_of_rows)
-        break
+
+
+#         #print(list_of_rows)
+#         break
         # for row in list_of_rows:
         #     print(row)
         #     break
