@@ -89,31 +89,48 @@ with open('data/all_park_comments.json', 'w+') as f:
 #code for the annual visitation rates
 
 
-# nps_uri_visit = '/Stats/MvcReportViewer.aspx?_id=f4ecfcf9-2129-46a0-90c2-0c38c4be0446&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fRecreation+Visitors+By+Month+(1979+-+Last+Calendar+Year)&_39=880px&Park='
+nps_uri_visit = '/Stats/MvcReportViewer.aspx?_id=f4ecfcf9-2129-46a0-90c2-0c38c4be0446&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fRecreation+Visitors+By+Month+(1979+-+Last+Calendar+Year)&_39=880px&Park='
 
-# data_dicts_visitors = {}
-# for park in all_ids:
-#     full_url_visit = f'{url_stub}{nps_uri_visit}{park}'
+data_dicts_visitors = {}
+for park in all_ids:
+    full_url_visit = f'{url_stub}{nps_uri_visit}{park}'
 #     #print(f'VISITING URL: {full_url_visit}')
-#     response = requests.get(full_url_visit)
-#     html = response.content
+    response = requests.get(full_url_visit)
+    html = response.content
 #     #print(html)
 
-#     soup = BeautifulSoup(html, 'lxml')
-#     table = soup.find('table', attrs={'cols':'14'})
+    soup = BeautifulSoup(html, 'lxml')
+    table = soup.find('table', attrs={'cols':'14'})
 #     #print(soup)
 #     #print(table)
-#     if table:
-#         list_of_rows = []
-#         for row in table.findAll('tr'):
-#                 list_of_cells = []
-#                 if row.find('div') is not None:
-#                         for cell in row.findAll('div'):
-#                                 # add it to the list of cells
-#                                 list_of_cells.append(cell.text)
-#                         list_of_rows.append(list_of_cells)
+    if table:
+        list_of_rows = []
+        for row in table.findAll('tr'):
+                list_of_cells = []
+                if row.find('div') is not None:
+                        for cell in row.findAll('div'):
+                                # add it to the list of cells
+                                list_of_cells.append(cell.text)
+                        list_of_rows.append(list_of_cells)
 
-                
+        data_dicts_visitors[park] = {}
+        data_dicts_visitors[park]['url'] = full_url_visit
+        data_dicts_visitors[park]['scrape_date'] = f'{date.today()}'
+        data_dicts_visitors[park]['park_visitors'] = []
+
+        for row in list_of_rows[1:]:
+        #     print(row)
+            visitors = {}
+            visitors['date'] = row[0]
+            visitors['text'] = row[1]
+            data_dicts_visitors[park]['park_visitors'].append(visitors)
+
+    break
+
+j = json.dumps(data_dicts_visitors, sort_keys=True, indent=4)
+#print(j)
+with open('data/all_park_visitors.json', 'w+') as f:
+    print(j, file=f)         
 
 
 
