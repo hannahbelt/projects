@@ -121,13 +121,29 @@ for park in all_ids:
         for row in list_of_rows[1:]:
         #     print(row)
             visitors = {}
-            visitors['date'] = row[0]
-            visitors['text'] = row[1]
+            visitors[row[0]] = {}
+            visitors[row[0]]['January'] = row[1]
+            visitors[row[0]]['February'] = row[2]
+            visitors[row[0]]['March'] = row[3]
+            visitors[row[0]]['April'] = row[4]
+            visitors[row[0]]['May'] = row[5]
+            visitors[row[0]]['June'] = row[6]
+            visitors[row[0]]['July'] = row[7]
+            visitors[row[0]]['August'] = row[8]
+            visitors[row[0]]['September'] = row[9]
+            visitors[row[0]]['October'] = row[10]
+            visitors[row[0]]['November'] = row[11]
+            if int(row[0]) < 2018:
+                visitors[row[0]]['December'] = row[12]
+                visitors[row[0]]['Total'] = row[13]
+            else:
+                visitors[row[0]]['December'] = row[12] = ''
+                visitors[row[0]]['Total'] = '' 
             data_dicts_visitors[park]['park_visitors'].append(visitors)
 
     break
 
-j = json.dumps(data_dicts_visitors, sort_keys=True, indent=4)
+j = json.dumps(data_dicts_visitors, indent=4)
 #print(j)
 with open('data/all_park_visitors.json', 'w+') as f:
     print(j, file=f)         
