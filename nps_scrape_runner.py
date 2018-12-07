@@ -9,3 +9,5 @@ with open('all_park_visitors', 'r') as read_file_visitors:
     visitors = json.load(read_file_visitors)
 
 # google merge two dictionaries shared keys python
+
+comments_and_visitors = {}
