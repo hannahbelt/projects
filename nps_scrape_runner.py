@@ -23,7 +23,7 @@ for key in visitors.keys():
                 comment_year = comment['date'][-4:]
                 comments_and_visitors[key][park_visitors][comment_year]['comments'].append(comment)
 
-j = json.dumps(data_dicts_visitors, indent=4)
+j = json.dumps(comments_and_visitors, indent=4)
 #print(j)
 with open('data/comments_and_visitors.json', 'w+') as f:
     print(j, file=f)    
