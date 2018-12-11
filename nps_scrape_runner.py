@@ -23,7 +23,7 @@ for key in visitors.keys():
     #print(park_comments)
     if park_comments:
         comments_and_visitors[key] = park_visitors
-        for comment in park_comments:
+        for comment in park_comments['park_comments']:
             comment_year = comment['date'][-4:]
             comments_and_visitors[key][park_visitors][comment_year]['comments'].append(comment)
 
