@@ -15,7 +15,6 @@ comments_and_visitors = {}
 for key in visitors.keys():
     park_visitors = visitors.get(key, None)
     #print(park_visitors)
-    year = {}
     if park_visitors:
         for year in park_visitors:
             year['comments'] = []

@@ -1,0 +1,688 @@
+{
+    "ABLI": {
+        "url": "https://irma.nps.gov/Stats/MvcReportViewer.aspx?_id=f4ecfcf9-2129-46a0-90c2-0c38c4be0446&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fRecreation+Visitors+By+Month+(1979+-+Last+Calendar+Year)&_39=880px&Park=ABLI",
+        "scrape_date": "2018-12-04",
+        "park_visitors": [
+            {
+                "2018": {
+                    "January": "5,695",
+                    "February": "8,487",
+                    "March": "17,468",
+                    "April": "26,548",
+                    "May": "33,102",
+                    "June": "35,569",
+                    "July": "47,607",
+                    "August": "22,124",
+                    "September": "29,761",
+                    "October": "19,639",
+                    "November": "11,402",
+                    "December": "",
+                    "Total": ""
+                }
+            },
+            {
+                "2017": {
+                    "January": "4,716",
+                    "February": "4,918",
+                    "March": "17,492",
+                    "April": "26,788",
+                    "May": "27,530",
+                    "June": "40,216",
+                    "July": "44,086",
+                    "August": "37,215",
+                    "September": "31,035",
+                    "October": "20,685",
+                    "November": "10,644",
+                    "December": "4,255",
+                    "Total": "269,580"
+                }
+            },
+            {
+                "2016": {
+                    "January": "5,954",
+                    "February": "5,721",
+                    "March": "13,005",
+                    "April": "23,676",
+                    "May": "23,890",
+                    "June": "29,233",
+                    "July": "52,771",
+                    "August": "38,461",
+                    "September": "21,779",
+                    "October": "20,274",
+                    "November": "11,502",
+                    "December": "6,229",
+                    "Total": "252,495"
+                }
+            },
+            {
+                "2015": {
+                    "January": "3,486",
+                    "February": "2,625",
+                    "March": "6,552",
+                    "April": "13,507",
+                    "May": "15,904",
+                    "June": "20,274",
+                    "July": "23,214",
+                    "August": "18,854",
+                    "September": "16,516",
+                    "October": "13,930",
+                    "November": "8,712",
+                    "December": "5,031",
+                    "Total": "148,605"
+                }
+            },
+            {
+                "2014": {
+                    "January": "2,954",
+                    "February": "4,645",
+                    "March": "9,564",
+                    "April": "20,110",
+                    "May": "31,790",
+                    "June": "40,058",
+                    "July": "45,598",
+                    "August": "34,672",
+                    "September": "24,368",
+                    "October": "18,777",
+                    "November": "5,400",
+                    "December": "3,328",
+                    "Total": "241,264"
+                }
+            },
+            {
+                "2013": {
+                    "January": "4,063",
+                    "February": "3,518",
+                    "March": "10,482",
+                    "April": "12,302",
+                    "May": "19,672",
+                    "June": "25,736",
+                    "July": "28,815",
+                    "August": "21,662",
+                    "September": "21,228",
+                    "October": "3,930",
+                    "November": "8,544",
+                    "December": "3,976",
+                    "Total": "163,928"
+                }
+            },
+            {
+                "2012": {
+                    "January": "3,772",
+                    "February": "4,920",
+                    "March": "11,844",
+                    "April": "16,608",
+                    "May": "18,076",
+                    "June": "26,021",
+                    "July": "25,608",
+                    "August": "20,010",
+                    "September": "18,888",
+                    "October": "12,490",
+                    "November": "6,536",
+                    "December": "4,742",
+                    "Total": "169,515"
+                }
+            },
+            {
+                "2011": {
+                    "January": "2,643",
+                    "February": "3,647",
+                    "March": "7,925",
+                    "April": "19,339",
+                    "May": "16,958",
+                    "June": "21,492",
+                    "July": "26,221",
+                    "August": "20,223",
+                    "September": "20,568",
+                    "October": "12,889",
+                    "November": "6,757",
+                    "December": "4,906",
+                    "Total": "163,568"
+                }
+            },
+            {
+                "2010": {
+                    "January": "3,878",
+                    "February": "5,167",
+                    "March": "8,054",
+                    "April": "18,178",
+                    "May": "19,290",
+                    "June": "24,308",
+                    "July": "29,269",
+                    "August": "21,939",
+                    "September": "22,223",
+                    "October": "14,265",
+                    "November": "6,467",
+                    "December": "4,084",
+                    "Total": "177,122"
+                }
+            },
+            {
+                "2009": {
+                    "January": "4,199",
+                    "February": "7,313",
+                    "March": "11,576",
+                    "April": "23,545",
+                    "May": "23,776",
+                    "June": "34,697",
+                    "July": "39,696",
+                    "August": "27,303",
+                    "September": "26,285",
+                    "October": "11,521",
+                    "November": "7,148",
+                    "December": "4,052",
+                    "Total": "221,111"
+                }
+            },
+            {
+                "2008": {
+                    "January": "5,829",
+                    "February": "6,911",
+                    "March": "10,720",
+                    "April": "17,829",
+                    "May": "26,295",
+                    "June": "33,817",
+                    "July": "29,225",
+                    "August": "22,166",
+                    "September": "21,765",
+                    "October": "13,747",
+                    "November": "8,013",
+                    "December": "4,087",
+                    "Total": "200,404"
+                }
+            },
+            {
+                "2007": {
+                    "January": "4,960",
+                    "February": "5,877",
+                    "March": "9,868",
+                    "April": "17,900",
+                    "May": "21,277",
+                    "June": "29,353",
+                    "July": "37,586",
+                    "August": "18,805",
+                    "September": "24,115",
+                    "October": "16,434",
+                    "November": "10,223",
+                    "December": "6,552",
+                    "Total": "202,950"
+                }
+            },
+            {
+                "2006": {
+                    "January": "5,635",
+                    "February": "6,461",
+                    "March": "10,449",
+                    "April": "18,893",
+                    "May": "17,195",
+                    "June": "29,967",
+                    "July": "31,376",
+                    "August": "21,663",
+                    "September": "25,516",
+                    "October": "14,435",
+                    "November": "10,469",
+                    "December": "7,995",
+                    "Total": "200,054"
+                }
+            },
+            {
+                "2005": {
+                    "January": "4,160",
+                    "February": "6,422",
+                    "March": "10,737",
+                    "April": "19,170",
+                    "May": "19,280",
+                    "June": "26,943",
+                    "July": "36,098",
+                    "August": "23,308",
+                    "September": "17,896",
+                    "October": "13,924",
+                    "November": "7,302",
+                    "December": "5,569",
+                    "Total": "190,809"
+                }
+            },
+            {
+                "2004": {
+                    "January": "4,438",
+                    "February": "6,929",
+                    "March": "11,008",
+                    "April": "20,939",
+                    "May": "22,311",
+                    "June": "28,656",
+                    "July": "29,358",
+                    "August": "25,318",
+                    "September": "22,419",
+                    "October": "14,230",
+                    "November": "8,210",
+                    "December": "8,012",
+                    "Total": "201,828"
+                }
+            },
+            {
+                "2003": {
+                    "January": "5,537",
+                    "February": "6,064",
+                    "March": "12,005",
+                    "April": "20,202",
+                    "May": "23,537",
+                    "June": "29,184",
+                    "July": "35,912",
+                    "August": "27,793",
+                    "September": "23,970",
+                    "October": "14,650",
+                    "November": "7,325",
+                    "December": "5,471",
+                    "Total": "211,650"
+                }
+            },
+            {
+                "2002": {
+                    "January": "7,613",
+                    "February": "8,839",
+                    "March": "13,599",
+                    "April": "23,978",
+                    "May": "29,236",
+                    "June": "36,158",
+                    "July": "37,956",
+                    "August": "30,700",
+                    "September": "25,218",
+                    "October": "17,177",
+                    "November": "9,621",
+                    "December": "10,677",
+                    "Total": "250,772"
+                }
+            },
+            {
+                "2001": {
+                    "January": "5,294",
+                    "February": "7,236",
+                    "March": "11,609",
+                    "April": "23,039",
+                    "May": "27,133",
+                    "June": "28,642",
+                    "July": "35,143",
+                    "August": "33,524",
+                    "September": "22,230",
+                    "October": "17,642",
+                    "November": "11,458",
+                    "December": "6,725",
+                    "Total": "229,675"
+                }
+            },
+            {
+                "2000": {
+                    "January": "5,722",
+                    "February": "7,108",
+                    "March": "12,726",
+                    "April": "23,698",
+                    "May": "27,027",
+                    "June": "30,403",
+                    "July": "35,085",
+                    "August": "37,343",
+                    "September": "24,811",
+                    "October": "17,509",
+                    "November": "9,653",
+                    "December": "5,095",
+                    "Total": "236,180"
+                }
+            },
+            {
+                "1999": {
+                    "January": "3,965",
+                    "February": "6,904",
+                    "March": "10,641",
+                    "April": "21,686",
+                    "May": "27,508",
+                    "June": "34,489",
+                    "July": "40,882",
+                    "August": "42,477",
+                    "September": "27,277",
+                    "October": "18,896",
+                    "November": "10,455",
+                    "December": "6,024",
+                    "Total": "251,204"
+                }
+            },
+            {
+                "1998": {
+                    "January": "5,468",
+                    "February": "6,131",
+                    "March": "10,812",
+                    "April": "22,057",
+                    "May": "26,859",
+                    "June": "34,578",
+                    "July": "41,358",
+                    "August": "44,322",
+                    "September": "27,471",
+                    "October": "17,859",
+                    "November": "8,944",
+                    "December": "4,983",
+                    "Total": "250,842"
+                }
+            },
+            {
+                "1997": {
+                    "January": "4,820",
+                    "February": "7,014",
+                    "March": "11,899",
+                    "April": "22,406",
+                    "May": "28,259",
+                    "June": "37,096",
+                    "July": "44,944",
+                    "August": "47,853",
+                    "September": "25,869",
+                    "October": "19,645",
+                    "November": "8,108",
+                    "December": "4,976",
+                    "Total": "262,889"
+                }
+            },
+            {
+                "1996": {
+                    "January": "3,168",
+                    "February": "6,305",
+                    "March": "11,031",
+                    "April": "20,920",
+                    "May": "26,565",
+                    "June": "35,569",
+                    "July": "45,318",
+                    "August": "39,004",
+                    "September": "27,207",
+                    "October": "20,453",
+                    "November": "7,765",
+                    "December": "6,039",
+                    "Total": "249,344"
+                }
+            },
+            {
+                "1995": {
+                    "January": "4,855",
+                    "February": "7,298",
+                    "March": "15,213",
+                    "April": "27,197",
+                    "May": "30,021",
+                    "June": "37,984",
+                    "July": "50,043",
+                    "August": "37,331",
+                    "September": "28,179",
+                    "October": "19,459",
+                    "November": "7,846",
+                    "December": "3,083",
+                    "Total": "268,509"
+                }
+            },
+            {
+                "1994": {
+                    "January": "2,791",
+                    "February": "6,064",
+                    "March": "13,270",
+                    "April": "25,077",
+                    "May": "33,911",
+                    "June": "38,296",
+                    "July": "50,349",
+                    "August": "40,963",
+                    "September": "29,539",
+                    "October": "21,576",
+                    "November": "10,109",
+                    "December": "7,597",
+                    "Total": "279,542"
+                }
+            },
+            {
+                "1993": {
+                    "January": "6,827",
+                    "February": "6,264",
+                    "March": "10,616",
+                    "April": "25,666",
+                    "May": "31,065",
+                    "June": "41,912",
+                    "July": "53,222",
+                    "August": "47,290",
+                    "September": "32,062",
+                    "October": "22,199",
+                    "November": "9,703",
+                    "December": "6,884",
+                    "Total": "293,710"
+                }
+            },
+            {
+                "1992": {
+                    "January": "5,796",
+                    "February": "9,402",
+                    "March": "13,529",
+                    "April": "23,709",
+                    "May": "33,661",
+                    "June": "43,937",
+                    "July": "53,386",
+                    "August": "45,547",
+                    "September": "31,647",
+                    "October": "24,843",
+                    "November": "10,245",
+                    "December": "7,037",
+                    "Total": "302,739"
+                }
+            },
+            {
+                "1991": {
+                    "January": "4,638",
+                    "February": "7,525",
+                    "March": "14,873",
+                    "April": "26,366",
+                    "May": "33,334",
+                    "June": "43,418",
+                    "July": "59,582",
+                    "August": "50,771",
+                    "September": "30,492",
+                    "October": "27,074",
+                    "November": "10,498",
+                    "December": "8,374",
+                    "Total": "316,945"
+                }
+            },
+            {
+                "1990": {
+                    "January": "5,475",
+                    "February": "8,303",
+                    "March": "14,032",
+                    "April": "32,088",
+                    "May": "31,259",
+                    "June": "42,742",
+                    "July": "58,403",
+                    "August": "47,773",
+                    "September": "30,545",
+                    "October": "20,955",
+                    "November": "11,245",
+                    "December": "4,849",
+                    "Total": "307,669"
+                }
+            },
+            {
+                "1989": {
+                    "January": "5,248",
+                    "February": "5,825",
+                    "March": "15,499",
+                    "April": "24,152",
+                    "May": "35,768",
+                    "June": "47,289",
+                    "July": "57,136",
+                    "August": "50,888",
+                    "September": "29,366",
+                    "October": "23,895",
+                    "November": "9,556",
+                    "December": "5,201",
+                    "Total": "309,823"
+                }
+            },
+            {
+                "1988": {
+                    "January": "4,124",
+                    "February": "5,944",
+                    "March": "10,653",
+                    "April": "23,639",
+                    "May": "31,716",
+                    "June": "46,750",
+                    "July": "52,572",
+                    "August": "44,378",
+                    "September": "28,329",
+                    "October": "23,724",
+                    "November": "10,436",
+                    "December": "6,059",
+                    "Total": "288,324"
+                }
+            },
+            {
+                "1987": {
+                    "January": "3,910",
+                    "February": "4,916",
+                    "March": "11,964",
+                    "April": "24,839",
+                    "May": "34,749",
+                    "June": "45,870",
+                    "July": "52,849",
+                    "August": "48,752",
+                    "September": "29,760",
+                    "October": "21,839",
+                    "November": "8,236",
+                    "December": "5,141",
+                    "Total": "292,825"
+                }
+            },
+            {
+                "1986": {
+                    "January": "4,754",
+                    "February": "4,589",
+                    "March": "13,019",
+                    "April": "24,633",
+                    "May": "31,304",
+                    "June": "46,829",
+                    "July": "52,264",
+                    "August": "47,183",
+                    "September": "23,227",
+                    "October": "20,030",
+                    "November": "7,776",
+                    "December": "5,012",
+                    "Total": "280,620"
+                }
+            },
+            {
+                "1985": {
+                    "January": "2,322",
+                    "February": "2,532",
+                    "March": "8,641",
+                    "April": "24,070",
+                    "May": "30,329",
+                    "June": "44,353",
+                    "July": "53,333",
+                    "August": "43,303",
+                    "September": "22,970",
+                    "October": "20,269",
+                    "November": "8,133",
+                    "December": "4,650",
+                    "Total": "264,905"
+                }
+            },
+            {
+                "1984": {
+                    "January": "2,841",
+                    "February": "6,056",
+                    "March": "7,660",
+                    "April": "20,837",
+                    "May": "29,075",
+                    "June": "44,950",
+                    "July": "51,650",
+                    "August": "44,335",
+                    "September": "21,922",
+                    "October": "17,073",
+                    "November": "7,262",
+                    "December": "4,362",
+                    "Total": "258,023"
+                }
+            },
+            {
+                "1983": {
+                    "January": "3,469",
+                    "February": "4,929",
+                    "March": "10,620",
+                    "April": "22,103",
+                    "May": "28,663",
+                    "June": "42,974",
+                    "July": "47,895",
+                    "August": "40,832",
+                    "September": "20,182",
+                    "October": "22,430",
+                    "November": "8,119",
+                    "December": "3,910",
+                    "Total": "256,126"
+                }
+            },
+            {
+                "1982": {
+                    "January": "2,374",
+                    "February": "5,101",
+                    "March": "10,839",
+                    "April": "24,977",
+                    "May": "39,963",
+                    "June": "55,893",
+                    "July": "61,748",
+                    "August": "54,038",
+                    "September": "28,767",
+                    "October": "23,580",
+                    "November": "6,968",
+                    "December": "4,459",
+                    "Total": "318,707"
+                }
+            },
+            {
+                "1981": {
+                    "January": "3,395",
+                    "February": "5,390",
+                    "March": "10,659",
+                    "April": "17,808",
+                    "May": "29,005",
+                    "June": "36,651",
+                    "July": "46,246",
+                    "August": "50,005",
+                    "September": "25,049",
+                    "October": "15,981",
+                    "November": "8,646",
+                    "December": "3,410",
+                    "Total": "252,245"
+                }
+            },
+            {
+                "1980": {
+                    "January": "2,496",
+                    "February": "2,871",
+                    "March": "8,312",
+                    "April": "16,733",
+                    "May": "24,497",
+                    "June": "33,963",
+                    "July": "41,609",
+                    "August": "49,597",
+                    "September": "26,251",
+                    "October": "20,522",
+                    "November": "8,017",
+                    "December": "4,206",
+                    "Total": "239,074"
+                }
+            },
+            {
+                "1979": {
+                    "January": "1,586",
+                    "February": "3,036",
+                    "March": "9,853",
+                    "April": "33,087",
+                    "May": "27,838",
+                    "June": "31,582",
+                    "July": "60,896",
+                    "August": "47,171",
+                    "September": "29,797",
+                    "October": "16,777",
+                    "November": "5,978",
+                    "December": "3,630",
+                    "Total": "271,231"
+                }
+            }
+        ]
+    }
+}

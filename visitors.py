@@ -14,7 +14,7 @@ html = response.content
 
 # parse
 soup = BeautifulSoup(html, 'lxml')
-table = soup.find('table', attrs={'cols':'4'})
+table = soup.find('table', attrs={'cols':'2'})
 #print(table)
 
 
@@ -29,7 +29,7 @@ for row in table.findAll('tr'):
     if row.find('div') is not None:
         for cell in row.findAll('div'):
             # add it to the list of cells
-            list_of_cells.append(cell.text)
+            list_of_cells.append(cell.text.replace('%', ''))
         #print(list_of_cells)
         list_of_rows.append(list_of_cells)
 for row in list_of_rows:
@@ -43,6 +43,6 @@ for row in list_of_rows:
 outfile = open('data/visitors.csv', 'w+')
 writer = csv.writer(outfile)
 writer.writerow(['Park', 'Rank', 'Recreation Visits', 'Percent of Total'])
-writer.writerows(list_of_rows)
+writer.writerows(list_of_rows[2:])
 
 

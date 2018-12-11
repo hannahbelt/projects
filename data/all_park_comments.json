@@ -1,0 +1,500 @@
+{
+    "ABLI": {
+        "park_comments": [
+            {
+                "date": "11/1/2018",
+                "text": "Used estimator tool for Knob Creek gate counter numbers.Single vehicle accident in September took out both gate counters."
+            },
+            {
+                "date": "10/1/2018",
+                "text": "Traffic counters at Knob Creek still offline due to single vehicle accident in September.Knob Creek gate counter stats were estimated using estimator tool."
+            },
+            {
+                "date": "9/1/2018",
+                "text": "Both traffic counters at Knob Creek were knocked off line by a single vehicle traffic accident.  The traffic counter on the Bardstown end was actually run over and damaged by the accident.  The two counters are wired together.  As a result, the Hodgenville end counter does not work.  The accident occurred late September.  The counters will be out of operation until further notice.Per suggestion of M. Brown, the Missing Data Estimation Tool was used to estimate stats for the month of September.  11-18-18"
+            },
+            {
+                "date": "8/1/2018",
+                "text": "Traffic counter at Knob Creek on Bardstown end of parking lot was not working. Knob Creek total came from one traffic counter."
+            },
+            {
+                "date": "7/1/2018",
+                "text": "Road Counter was down at Knob Creek.  Zero stats were originally input for Knob Creek report.Per suggestion of M. Brown, the park used the Missing Data Estimation Tool to estimate stats for this period"
+            },
+            {
+                "date": "1/1/2018",
+                "text": "One of the counters in the Knob Creek parking lot is down."
+            },
+            {
+                "date": "11/1/2017",
+                "text": "The counters at Knob Creek stopped working during this month. Since the site was only staffed on weekends during November, it is unknown precisely when they stopped working. The number for the counters is based on the average difference between the Birthplace and Knob Creek, which is typically 40% (the Birthplace number being approximately 40% higher than Knob Creek)."
+            },
+            {
+                "date": "2/1/2016",
+                "text": "Park was closed on February 15 due to weather."
+            },
+            {
+                "date": "1/1/2016",
+                "text": "Park was closed for New Year's Day, and Jan. 20, 23, & 24 due to winter storm. Picnic Area was closed Jan. 20-26 due to weather. Knob Creek reading was estimated due to a problem with traffic counters."
+            },
+            {
+                "date": "12/1/2015",
+                "text": "Park was closed December 25. Knob Creek numbers are estimated because of a problem reading the new traffic counters. The problem appears to be resolved and numbers for January 2016 should be accurate, real data."
+            },
+            {
+                "date": "11/1/2015",
+                "text": "Park was closed for Thanksgiving Day, Nov. 26. Knob Creek numbers are estimated due to issue with reading the new traffic counters."
+            },
+            {
+                "date": "9/1/2015",
+                "text": "The Knob Creek Unit remained closed throughout the month for an ongoing construction project."
+            },
+            {
+                "date": "8/1/2015",
+                "text": "Knob Creek Unit remained closed for the entire month due to an ongoing construction project."
+            },
+            {
+                "date": "7/1/2015",
+                "text": "The Knob Creek Unit remained closed the entire month for an on-going construction project."
+            },
+            {
+                "date": "6/1/2015",
+                "text": "Knob Creek Unit remained closed for the entire month due to an ongoing construction project."
+            },
+            {
+                "date": "5/1/2015",
+                "text": "The Knob Creek remained closed for the entire month of May 2015 for an ongoing construction project."
+            },
+            {
+                "date": "4/1/2015",
+                "text": "Knob Creek Unit remained closed the entire month for construction project."
+            },
+            {
+                "date": "3/1/2015",
+                "text": "Park was closed for three days, and picinic area for eight days, due to winter storm. Knob Creek unit remained closed the entire month for constuction project."
+            },
+            {
+                "date": "2/1/2015",
+                "text": "The park was closed Feb. 16-20 (5 days) and the Picnic Area was closed Feb. 16-28 (12 days) due to winter storm. Knob Creek remained closed for the entire month due to ongoing construction project."
+            },
+            {
+                "date": "11/1/2014",
+                "text": "There will be no reading for the Knob Creek traffic counter since it was removed in November 2014, due to the unit being closed for construction."
+            },
+            {
+                "date": "10/1/2014",
+                "text": "The Knob Creek gate count was estimated since the counter did not get reset the first of October."
+            },
+            {
+                "date": "9/1/2014",
+                "text": "We installed new Diamond Traffic Counters at the Main Gate and Picnic Gate on  9/4/14."
+            },
+            {
+                "date": "8/1/2014",
+                "text": "The Picnic Gate counter was not counting properly.  So, therefore I adjusted the picnic gate count."
+            },
+            {
+                "date": "7/1/2014",
+                "text": "Gas prices have fluctuated this month which could have affected visitation."
+            },
+            {
+                "date": "6/1/2014",
+                "text": "There are two entrances to the Knob Creek parking lot.  A traffic counter is installed at only one entrance.  If visitors come and go out the same entrance, they will be counted twice. The traffic counter was installed August 2013.  There is no gate reading for last year to compare until August of this year. Therefore, there will be a significant increase in the visitation reading.Knob Creek count adjusted - divided by two (psz)"
+            },
+            {
+                "date": "4/1/2014",
+                "text": "In  April of 2013 there was no traffic counter at Knob Creek, so therefore no gate reading was recorded. A traffic counter has been installed, so 1/2 of the gate reading number was recorded in April 2014. There are two entrances to the Knob Creek parking lot. A traffic counter is only installed at one entrance.Increase in visitation could be contributed to that factor."
+            },
+            {
+                "date": "3/1/2014",
+                "text": "The park was closed for two days and the Memorial Building was closed for six days due to ice and snow.  Bad weather had an impact on our visitation."
+            },
+            {
+                "date": "2/1/2014",
+                "text": "Park was closed for two days and the Memorial Building was closed 9 days due to ice and snow.  Bad weather had an impact on our visitation."
+            },
+            {
+                "date": "1/1/2014",
+                "text": "Park visitation was affected due to cold temperatures, snow and ice. The park was closed one day due to the bad weather."
+            },
+            {
+                "date": "12/1/2013",
+                "text": "The park was closed two days this month due to snowy weather conditions and cold temperatures which affected visitation."
+            },
+            {
+                "date": "11/1/2013",
+                "text": "No one is staffed at the Knob Creek Site, there is no reading."
+            },
+            {
+                "date": "10/1/2013",
+                "text": "There is no gate count for Knob Creek.  Rangers are not staffed at Knob Creek during October. The park was closed October 1 thru October 16 which will affect the visitation for the month."
+            },
+            {
+                "date": "8/1/2013",
+                "text": "A traffic counter was installed at Knob Creek in August 2013."
+            },
+            {
+                "date": "7/1/2013",
+                "text": "No reading at Knob Creek.  The counter was removed in 2009."
+            },
+            {
+                "date": "6/1/2013",
+                "text": "The Knob Creek counter was removed in 2009, no reading."
+            },
+            {
+                "date": "5/1/2013",
+                "text": "The Knob Creek counter was removed in 2009, no reading."
+            },
+            {
+                "date": "4/1/2013",
+                "text": "The Knob Creek Counter was removed in 2009, no reading."
+            },
+            {
+                "date": "3/1/2013",
+                "text": "The Knob Creek Counter was removed in 2009, no reading."
+            },
+            {
+                "date": "2/1/2013",
+                "text": "The Knob Creek Counter was removed in 2009, no reading."
+            },
+            {
+                "date": "1/1/2013",
+                "text": "The Knob Creek counter was removed in 2009, no reading."
+            },
+            {
+                "date": "12/1/2012",
+                "text": "The Knob Creek counter was removed in 2009, no reading."
+            },
+            {
+                "date": "11/1/2012",
+                "text": "The Knob Creek Counter was removed in 2009, no reading."
+            },
+            {
+                "date": "10/1/2012",
+                "text": "The Knob Creek counter was removed in 2009, no reading."
+            },
+            {
+                "date": "9/1/2012",
+                "text": "The Knob Creek counter was removed in 2009. no reading."
+            },
+            {
+                "date": "8/1/2012",
+                "text": "The Knob Creek counter was removed in 2009, no reading. Summer vacations over and kids have started back to school "
+            },
+            {
+                "date": "7/1/2012",
+                "text": "No reading at Knob Creek since the counter was removed in 2010. "
+            },
+            {
+                "date": "6/1/2012",
+                "text": "No reading at Knob Creek since the counter was removed in 2009.  "
+            },
+            {
+                "date": "5/1/2012",
+                "text": "No reading at Knob Creek since the counter was removed in 2009.  "
+            },
+            {
+                "date": "4/1/2012",
+                "text": "No reading at Knob Creek since the counter was removed in 2009.  Gas prices are high. "
+            },
+            {
+                "date": "3/1/2012",
+                "text": "No reading at Knob Creek since the counter was removed in 2009.  "
+            },
+            {
+                "date": "2/1/2012",
+                "text": "No reading at Knob Creek since the counter was removed in 2009. High gas prices. "
+            },
+            {
+                "date": "1/1/2012",
+                "text": "No reading at Knob Creek since the counter was removed in 2009.  Gas prices are high.  "
+            },
+            {
+                "date": "12/1/2011",
+                "text": "No reading at Knob Creek since the counter was removed in 2009.  Gas prices went up.  "
+            },
+            {
+                "date": "11/1/2011",
+                "text": "No reading at Knob Creek since the counter was removed in 2009. "
+            },
+            {
+                "date": "10/1/2011",
+                "text": "No reading at Knob Creek since the counter was removed in 2009. "
+            },
+            {
+                "date": "9/1/2011",
+                "text": "The Knob Creek counter was removed in 2009, no reading.Gas price are still high.   "
+            },
+            {
+                "date": "8/1/2011",
+                "text": "The Knob Creek counter was removed in 2009, no reading.  Gas prices are still high. Summer vacations over and kids have started back to school. "
+            },
+            {
+                "date": "7/1/2011",
+                "text": "The Knob Creek counter was removed in 2009, no reading.  Gas prices are still high. "
+            },
+            {
+                "date": "6/1/2011",
+                "text": "The Knob Creek counter was removed in 2009, no reading.  Gas prices went up this month.   "
+            },
+            {
+                "date": "5/1/2011",
+                "text": "The main gate counter reading was adjusted, batteries had to be replaced.  The picnic gate couter wasn't working properly the reading had to be adjusted. The Knob Creek counter was removed in 2009, no reading. Gas prices are still high.    "
+            },
+            {
+                "date": "4/1/2011",
+                "text": "Knob Creek is staffed on weekends only.  The Knob Creek counter was removed in 2009,no reading.  Gas prices are still high.     "
+            },
+            {
+                "date": "3/1/2011",
+                "text": "Knob Creek is not staffed in March.  Knob Creek counter was removed in 2009, no reading. Gas Price are high.     "
+            },
+            {
+                "date": "2/1/2011",
+                "text": "The Knob Creek site is not staffed in February.  The Knob Creek counter was removed 11/2009, so the counter reading is 0.  Gas price are 3.46 gallon which has an impact on visitation. "
+            },
+            {
+                "date": "1/1/2011",
+                "text": "The Knob Creek site is not staffed in January.  The Knob Creek counter was removed 11/2009, so the counter reading is 0. I adjusted the Picnic Gate counter reading, it has not been working properly.     "
+            },
+            {
+                "date": "12/1/2010",
+                "text": "The Knob Creek site is not staffed in November. The Knob Creek counter was removed 11/2009,so the counter reading is 0.    "
+            },
+            {
+                "date": "11/1/2010",
+                "text": "\t\tKnob Creek counter was removed 11/2009 and the site is not staffed in November, so the counter reading is 0.   "
+            },
+            {
+                "date": "10/1/2010",
+                "text": "Iestimated the Knob Creek Counter Reading based on the number of visitors counted by the hand counter since the counter was removed on 11/2009.  Gas prices are 2.72 which may have an impacted visitation.  "
+            },
+            {
+                "date": "9/1/2010",
+                "text": "I estimated the Knob Creek Counter Reading based on the number of visitors counted by hand counter since the counter was removed on 11/2009. The Memorial Building opened in September 2010.   "
+            },
+            {
+                "date": "8/1/2010",
+                "text": "On the Visitor Imput Form the number of visitors entering the Memorial Building was 0 because the building was closed for major renovation.  I estimated the Knob Creek Counter reading based on the number of visitors counted by hand counter since the counter was removed on 11/2009.  Adjusted the picnic gate reading due to it not working properly. "
+            },
+            {
+                "date": "7/1/2010",
+                "text": "\t\tOn the Visitor Imput Form the number of visitors entering the Memorial Building was 0 because the building is closed for major renovation.  I estimated the Knob Creek counter reading based on the number of visitors counted by a hand counter since the counter was removed on 11/2009. Adjusted the Picnic Gate reading due to it not working properly. \t\t  "
+            },
+            {
+                "date": "6/1/2010",
+                "text": "\t\tOn the Visitor Imput Form the number of visitors entering the Memorial Building was 0 because the building is closed for major renovation.  I estimated the Knob Creek counter reading, the counter was removed 11/2009. The boardwalk has been closed for repair since May 24, 2010. "
+            },
+            {
+                "date": "5/1/2010",
+                "text": "On the Visitor Imput Form the number of visitors entering the Memorial Building was 0 because the building is closed for major renovation.  I estimated the Knob Creek counter reading, the counter was removed 11/2009.  Boundary Oak trail and Picnic area trails are open. Knob Creek trails are closed. Gas prices are high."
+            },
+            {
+                "date": "4/1/2010",
+                "text": "\t\t\t\tOn the Visitor Imput Form the number of visitors entering the Memorial Building was 0 because the building was closed for major renovation.  I estimated the Knob Creek counter reading, the counter was removed 11/2009.  Boundary Oak trail and Picnic Area trails are open. Gas prices have gone up.\t\t   "
+            },
+            {
+                "date": "3/1/2010",
+                "text": "\t\t\t\tOn the Visitor Imput Form the number of visitors entering the Memorial Building was 0 because the building is closed for major renovation.  I estimated the Knob Creek counter reading, the counter was removed 11/2009.  Boundary Oak trail is open.  The trails in the picnic area are stilled closed. Gas prices have gone up.    "
+            },
+            {
+                "date": "2/1/2010",
+                "text": "On the Visitor Imput Form the number of visitors entering the Memorial Building was 0 because the building is closed for major renovation.  I estimated the Knob Creek Counter reading, the counter was removed 11/2009. I also adjusted the Picnic Gate counter,replaced the batteries on 2/22 and reset counter to 0.  Hiking trails are still closed.     "
+            },
+            {
+                "date": "1/1/2010",
+                "text": "On the Visitor Imput Form the number of visitors entering the Memorial Building was 0 because the Memorial Building is closed for major renovation.  I estimated the Knob Creek counter reading, the counter is not working and was removed on 11/2009.  We had snow on Jan 29 and 30th which impacted visitation.  Hiking trail are still closed.     "
+            },
+            {
+                "date": "12/1/2009",
+                "text": "On the Visitor Input Form the number of visitors entering the Memorial Building was 0 because the Memorial Building is closed for major renovation.  I estimated the Knob Creek counter reading, the counter is not working and was removed on 11/2009 for repair. I also adjusted the Picnic Counter, it was too high.  Hiking trails are still closed at the Birthplace Unit due to ice storm damage.   "
+            },
+            {
+                "date": "11/1/2009",
+                "text": "On the Visitor Imput Form the number of visitors entering the Memorial Building was 0 because the Memorial Building is closed for major renovation.  I adjusted the the Knob Creek counter reading, it is not working properly and was removed on 11/13/09 for repair.  Hiking trails are still closed at the Birthplace Unit due to ice storm damage."
+            },
+            {
+                "date": "10/1/2009",
+                "text": "On the Visitor Imput Form the number of visitors entering the Memorial Building was 0 because the Memorial Building is closed for major renovation. I adjusted the Knob Creek counter reading,it is not working properly, the count was too high. Hiking trails are still closed at the Birthplace Unit."
+            },
+            {
+                "date": "9/1/2009",
+                "text": "Adjusted the Knob Creek Gate Counter.  Hiking trails are still closed at the Birthplace Unit.  Starting September 28, 2009 the Memorial Building will be closed for repair."
+            },
+            {
+                "date": "8/1/2009",
+                "text": "Adjusted the Picnic Gate and Knob Creek Gate Counter. Hiking trails are still closed at the Birthplace and Knob Creek Unit."
+            },
+            {
+                "date": "7/1/2009",
+                "text": " Adjusted the Picnic Gate and Knob Creek Gate Counters. Hiking trails are still closed at the Birthplace and Knob Creek unit.    "
+            },
+            {
+                "date": "6/1/2009",
+                "text": "\t\t\t\t\t\t\tAdjusted the Main Gate and Picnic Gate counters. Also, adjusted the Knob Creek Counter, it is not working properly, the count was too high. Hiking trails are still closed at the Birthplace and Knob Creek unit.         "
+            },
+            {
+                "date": "5/1/2009",
+                "text": "Adjusted the Picnic gate counter and Knob Creek gate counter.  Hiking trails are still closed at the Birthplace and Knob Creek unit. "
+            },
+            {
+                "date": "4/1/2009",
+                "text": "Adjusted the Picnic gate counter, due to dead batteries, and adjusted the Knob Creek gate counter, it was too high. \t\t "
+            },
+            {
+                "date": "3/1/2009",
+                "text": "Knob Creek Counter was high, adjusted the reading.  There are still areas in the park, the boardwalk, the Sinking Spring, boundary oak trail, picnic area trails, Knob Creek picnic area and trails that are closed off due to the ice storm that we had in January 27,2009."
+            },
+            {
+                "date": "2/1/2009",
+                "text": "The park was closed February 1 - 5, 2009 due to an ice storm.  The park had no power and there was  a lot of tree damage. Visitation was affected  by the park being closed for 5 days and the weather conditions during February. Knob Creek gate couter was high, I adjusted the reading. "
+            },
+            {
+                "date": "1/1/2009",
+                "text": "The Park was closed January 1 - HolidayThe Park was closed January 27- 31 due to the ice storm.  The park had no power and there was lots of tree damage.Visitation was affected due to the weather during the month of January 2009. Knob Creek gate count was high, adjusted the reading.   "
+            },
+            {
+                "date": "12/1/2008",
+                "text": "I think gas prices and the economy have had an impact on our park visitation. In June and July new gate counters for the main gate and picnic gate were installed (Model TT-41)to replace the laser beam counters.  The laser beam counters were not accurate counters. We hope to get accurate vistitation readings with the new counters. The counter at Knob Creek has not been replaced, we are using the laser beam counter, which is not accurate and has to be adjusted continually. We are in the process of preserving the Knob Creek Site and redeveloping the area.  When the area is redeveloped we will replace the traffic counter.     "
+            },
+            {
+                "date": "9/1/2008",
+                "text": "The Knob Creek Counter was too high.  I adjusted the fiqures.  "
+            },
+            {
+                "date": "7/1/2008",
+                "text": "The Knob Creek Counter has been removed, there is no counter reading for Knob Creek gate.   A new counter was installed in the Picnic Area on 7/8/08.  Both the main gate and the picnic gate counter record vehicles entering the park only.\t\t   "
+            },
+            {
+                "date": "6/1/2008",
+                "text": "Adjusted the main gate and picnic gate counters. Both counters have not been working properly.  There is not a counter reading for the Knob Creek counter, because it was not working and was removed. On 6/19/08 a new traffic counter, Model TT-41, was installed at the main gate which counts vehicles entering only. The old counters that were removed on 6/19/08 counted cars entering and leaving the park.  So part of the month the counter recorded vehicles entering and leaving, the second part of the month the counter recorded vehicles entering only. This factor was consider when entering figures in the main gate count.       "
+            },
+            {
+                "date": "5/1/2008",
+                "text": "I think gas prices continue to have an impact on our visitation.  Adjusted the main gate counter and the picnic gate counter.  Both counters have not been working properly.  We are in the process of purchasing new counters to replace the ones we currently have.  There is no reading for the picnic gate counter, because it was not working and was removed."
+            },
+            {
+                "date": "4/1/2008",
+                "text": "Adjusted the main gate counter, it was too high.  Gate counter in the Picnic area was removed on 4/2/08.  I think gas prices continue to have an impact on our visitation."
+            },
+            {
+                "date": "3/1/2008",
+                "text": "Adjusted main gate and picnic gate counters.  I think high gas prices continue to have an impact on our visitation. "
+            },
+            {
+                "date": "2/1/2008",
+                "text": "\t\tThe Main Gate Counter and the Picnic Counter were adjusted (counters were high). Gas prices are still high which I feel has had an effect on visitation. The park was closed February 10 and 11 due to preparation for the Bicentennial Event to be held February 12. Due to an ice storm on 2/12 the event was cancelled and the park was closed.Start of a 2-year celebration, ending Feb 12, 2010.       "
+            },
+            {
+                "date": "1/1/2008",
+                "text": "The main gate, picnic gate and knob creek gate counter readings were too high.  I adjusted all three counters.FYI: formulas adjusted to reflect new magnetic loop traffic counters in entrance lanes only.     "
+            },
+            {
+                "date": "12/1/2007",
+                "text": "\t\tI think high gas prices continue to have an affect on visitation. The Main Gate counter and the Knob Creek Counter readings seem high. I adjusted the main gate counter reading. \t\t  "
+            },
+            {
+                "date": "11/1/2007",
+                "text": "The main gate counter and picnic gate counter weren't working properly. New batteries were installed in Picnic Gate counter. I estimated fiqures  for both counters based on 2006 reading.  "
+            },
+            {
+                "date": "10/1/2007",
+                "text": "Knob Creek counter quit working, was sent off for repair.  An old counter was installed, but it is not working properly because the counter reading is high.     "
+            },
+            {
+                "date": "8/1/2007",
+                "text": "The Memorial Building was closed for three days due to repair which affected our visitation fiqures. "
+            },
+            {
+                "date": "4/1/2007",
+                "text": "High gas prices could have an effect on visitation.Knob Creek counter fiqures seem high, I adjusted the figure.  "
+            },
+            {
+                "date": "3/1/2007",
+                "text": "High gas prices continue to have an effect on visitation.  Also, the Knob Creek gate count seems high. "
+            },
+            {
+                "date": "2/1/2007",
+                "text": "The Picnic Area traffic counter and Knob Creek counter for the month of February was too high. I adjusted the fiqures for both counters. Also, the Memorial Building being closed for 6 days for painting affected park visitation.    "
+            },
+            {
+                "date": "1/1/2007",
+                "text": "Due to cold temperatures and the Memorial Building being closed for repair and painting during the month of January park visitation was affected.     "
+            },
+            {
+                "date": "12/1/2006",
+                "text": "Visitation has been affected by the gas prices and the economy throughout the year. "
+            },
+            {
+                "date": "9/1/2006",
+                "text": "Visitation continues to be affected by the gas prices.  However, this month visitation may be up some due to drop in gas prices."
+            },
+            {
+                "date": "8/1/2006",
+                "text": "Visitation continues to be down.  I think it is contributed to gas prices.   "
+            },
+            {
+                "date": "7/1/2006",
+                "text": "Visitation continues to be down.  The decrease I think is still due the economy and high gas prices."
+            },
+            {
+                "date": "6/1/2006",
+                "text": "Visitation has been affected throughout the year.  I think it is contributed to high gas prices and the economy.    "
+            },
+            {
+                "date": "5/1/2006",
+                "text": "Picnic Gate Counter and Knob Creek  Gate Counter are high.  I estimated the fiqures for both counters based on last years figures. Knob Creek counter may be affected by hard rains. I think visitation is down due the continued high gas prices.  "
+            },
+            {
+                "date": "4/1/2006",
+                "text": "Main Gate Counter quit working on 4/11/06, counter was replaced on 4/12/06.I used figures and estimated count.The counter at Knob Creek was not working, the count was too high. Relocated the counter and set back to 0 on 4/25/06. I had to estimated count.The decrease in visitation could be contributed to high gas prices and counters not working.    "
+            },
+            {
+                "date": "3/1/2006",
+                "text": "Decrease in visitation could be contributed to high gas prices."
+            },
+            {
+                "date": "2/1/2006",
+                "text": "Picnic Area Traffic Counter and the Knob Creek Traffic Counter for the month of February has not been working properly. I estimated the numbers for both counter according to last years figure.Picnic counter high,unknown reason.The Knob Creek figure was also high. Factors that could have affected it was ongoing construction and fog.     "
+            },
+            {
+                "date": "1/1/2006",
+                "text": "Visitation for the month of January shows a 35.47 increase which I think is high for the month according to the visitor center and memorial building count.  I believe that the main gate and Knob Creek counters are not working properly which has contributed to this high visitation increase.  "
+            },
+            {
+                "date": "12/1/2005",
+                "text": "The main gate,picnic gate and Knob Creek counters were not working properly during the month of December.  The picnic gate counter has to be sent off but was reinstall on December 13. The main gate counter batteries had to be replaced.  So therefore, the main gate,the picnic gate, and Knob Creek counter fiqures had to be estimated for the month.  "
+            },
+            {
+                "date": "11/1/2005",
+                "text": "Decrease in visitation may be due to high fuel prices.  Also the picnic gate counter wasn't working properly, so the picnic gate number was estimated from November 2004 figures.Bertha Montgomery received bus/people stats 12/13/05, data input. \t\t "
+            },
+            {
+                "date": "10/1/2005",
+                "text": "Decrease in visitation I think is still being affected by the economy and fuel prices. Also the picnic gate counter has not been working. I estimated the picnic gate number from October 2004 figures.  "
+            },
+            {
+                "date": "9/1/2005",
+                "text": "Decrease in visitation could be contributed to the economy and high fuel prices. "
+            },
+            {
+                "date": "8/1/2005",
+                "text": "Due to the parking lot being paved and striped during the month of August 2005, showed a decrease in the main gate counter which caused a decrease in park visitation. The picnic gate counter was reset back to 0 during the middle of August.  The picnic gate counter was estimated.  "
+            },
+            {
+                "date": "4/1/2005",
+                "text": "Midway Campground remains closed while upgrades are being done. Meanwhile, Burns Lake Campground remains open instead. (Monument Lake Campground continues to remain open year-round."
+            },
+            {
+                "date": "12/1/2004",
+                "text": "Accumulated snow,icy conditions, and cold temperatures closed the preserve on several days and contributed to lowered visitation for January 2005."
+            },
+            {
+                "date": "10/1/2004",
+                "text": "test for ABLI October 2004"
+            }
+        ],
+        "scrape_date": "2018-12-04",
+        "url": "https://irma.nps.gov/Stats/MvcReportViewer.aspx?_id=6d4c57ec-773a-4be8-a7d7-4410daaa91ad&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fMonthly+Visitation+Comments+By+Park&_39=880px&Park=ABLI"
+    }
+}

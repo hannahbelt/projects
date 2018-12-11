@@ -1,10 +1,10 @@
 error_input = "ERROR: Invalid input"
-score = raw_input('Enter score between 0 and 1: ')
+score = input('Enter score between 0 and 1: ')
 try:
     float(score) >=0 and float(score) <=1
 except:
     print(error_input)
-    score = raw_input('Enter score: ')
+    score = input('Enter score: ')
 
 score = float(score)
 
