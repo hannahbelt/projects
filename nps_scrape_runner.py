@@ -25,9 +25,10 @@ for key in visitors.keys():
         comments_and_visitors[key] = park_visitors
         for comment in park_comments['park_comments']:
             comment_year = comment['date'][-4:]
+            #print(comment_year)
             comments_and_visitors[key][park_visitors][comment_year]['comments'].append(comment)
 
-j = json.dumps(comments_and_visitors, indent=4)
-#print(j)
-with open('data/comments_and_visitors.json', 'w+') as f:
-    print(j, file=f)    
+# j = json.dumps(comments_and_visitors, indent=4)
+# #print(j)
+# with open('data/comments_and_visitors.json', 'w+') as f:
+#     print(j, file=f)    
