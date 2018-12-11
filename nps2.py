@@ -72,8 +72,7 @@ for park in all_ids:
             comment['text'] = row[1]
             data_dicts_comments[park]['park_comments'].append(comment)
 
-    break
-
+  
 j = json.dumps(data_dicts_comments, sort_keys=True, indent=4)
 #print(j)
 with open('data/all_park_comments.json', 'w+') as f:
@@ -141,7 +140,7 @@ for park in all_ids:
                 visitors[row[0]]['Total'] = '' 
             data_dicts_visitors[park]['park_visitors'].append(visitors)
 
-    break
+    
 
 j = json.dumps(data_dicts_visitors, indent=4)
 #print(j)
