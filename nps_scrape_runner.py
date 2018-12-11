@@ -16,18 +16,18 @@ for key in visitors.keys():
     park_visitors = visitors.get(key, None)
     #print(park_visitors)
     if park_visitors:
-        for year in park_visitors:
+        for year in park_visitors['park_visitors']:
             year['comments'] = []
-            print(year)    
+            #print(year)    
     park_comments = comments.get(key, None)
     #print(park_comments)
-#     if park_comments:
-#         comments_and_visitors[key] = park_visitors
-#         for comment in park_comments:
-#             comment_year = comment['date'][-4:]
-#             comments_and_visitors[key][park_visitors][comment_year]['comments'].append(comment)
+    if park_comments:
+        comments_and_visitors[key] = park_visitors
+        for comment in park_comments:
+            comment_year = comment['date'][-4:]
+            comments_and_visitors[key][park_visitors][comment_year]['comments'].append(comment)
 
-# j = json.dumps(comments_and_visitors, indent=4)
-# #print(j)
-# with open('data/comments_and_visitors.json', 'w+') as f:
-#     print(j, file=f)    
+j = json.dumps(comments_and_visitors, indent=4)
+#print(j)
+with open('data/comments_and_visitors.json', 'w+') as f:
+    print(j, file=f)    
