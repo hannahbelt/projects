@@ -26,7 +26,8 @@ for key in visitors.keys():
         for comment in park_comments['park_comments']:
             comment_year = comment['date'][-4:]
             #print(comment_year)
-            comments_and_visitors[key][park_visitors][comment_year]['comments'].append(comment)
+            print(comments_and_visitors[key]['park_visitors'][comment_year].append(comment))
+            #comments_and_visitors[key][park_visitors][comment_year]['comments'].append(comment)
 
 # j = json.dumps(comments_and_visitors, indent=4)
 # #print(j)
