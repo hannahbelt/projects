@@ -37,46 +37,47 @@ for element in ids:
 
 url_stub = 'https://irma.nps.gov'
 
-nps_uri = '/Stats/MvcReportViewer.aspx?_id=6d4c57ec-773a-4be8-a7d7-4410daaa91ad&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fMonthly+Visitation+Comments+By+Park&_39=880px&Park='
+# nps_uri = '/Stats/MvcReportViewer.aspx?_id=6d4c57ec-773a-4be8-a7d7-4410daaa91ad&_m=Remote&_r=%2fNPS.Stats.Reports%2fPark+Specific+Reports%2fMonthly+Visitation+Comments+By+Park&_39=880px&Park='
 
-#def build_url_list():
-# main loop
-data_dicts_comments = {}
-for park in all_ids:
-    full_url = f'{url_stub}{nps_uri}{park}'
-    response = requests.get(full_url)
-    html = response.content
+# #def build_url_list():
+# # main loop
+# data_dicts_comments = {}
+# print('scraping comments ....')
+# for park in all_ids:
+#     full_url = f'{url_stub}{nps_uri}{park}'
+#     print(f'\n\n\n{park}\n{full_url}\n')
+#     response = requests.get(full_url)
+#     html = response.content
 
-    soup = BeautifulSoup(html, 'lxml')
-    table = soup.find('table', attrs={'cols':'2'})
-    if table:
-        list_of_rows = []
-        for row in table.findAll('tr'):
-            list_of_comments = []
-            if row.find('div') is not None:
-                for comments in row.findAll('div'):
-                    list_of_comments.append(comments.text)
+#     soup = BeautifulSoup(html, 'lxml')
+#     table = soup.find('table', attrs={'cols':'2'})
+#     if table:
+#         list_of_rows = []
+#         for row in table.findAll('tr'):
+#             list_of_comments = []
+#             if row.find('div') is not None:
+#                 for comments in row.findAll('div'):
+#                     list_of_comments.append(comments.text)
                     
-            list_of_rows.append(list_of_comments)
-        #print(list_of_rows)
+#             list_of_rows.append(list_of_comments)
+#         #print(list_of_rows)
 
-        data_dicts_comments[park] = {}
-        data_dicts_comments[park]['url'] = full_url
-        data_dicts_comments[park]['scrape_date'] = f'{date.today()}'
-        data_dicts_comments[park]['park_comments'] = []
+#         data_dicts_comments[park] = {}
+#         data_dicts_comments[park]['url'] = full_url
+#         data_dicts_comments[park]['scrape_date'] = f'{date.today()}'
+#         data_dicts_comments[park]['park_comments'] = []
 
-        for row in list_of_rows[1:]:
-        #     print(row)
-            comment = {}
-            comment['date'] = row[0]
-            comment['text'] = row[1]
-            data_dicts_comments[park]['park_comments'].append(comment)
+#         for row in list_of_rows[1:]:
+#         #     print(row)
+#             comment = {}
+#             comment['date'] = row[0]
+#             comment['text'] = row[1]
+#             data_dicts_comments[park]['park_comments'].append(comment)
 
-  
-j = json.dumps(data_dicts_comments, sort_keys=True, indent=4)
-#print(j)
-with open('data/all_park_comments.json', 'w+') as f:
-    print(j, file=f)
+# j = json.dumps(data_dicts_comments, sort_keys=True, indent=4)
+# #print(j)
+# with open('data/all_park_comments.json', 'w+') as f:
+#     print(j, file=f)
 
     #print(full_url)
     # build url
@@ -92,7 +93,9 @@ nps_uri_visit = '/Stats/MvcReportViewer.aspx?_id=f4ecfcf9-2129-46a0-90c2-0c38c4b
 
 data_dicts_visitors = {}
 for park in all_ids:
+    print('\n\n\n', park)
     full_url_visit = f'{url_stub}{nps_uri_visit}{park}'
+    print(full_url_visit)
 #     #print(f'VISITING URL: {full_url_visit}')
     response = requests.get(full_url_visit)
     html = response.content
@@ -121,23 +124,22 @@ for park in all_ids:
         #     print(row)
             visitors = {}
             visitors[row[0]] = {}
-            visitors[row[0]]['January'] = row[1]
-            visitors[row[0]]['February'] = row[2]
-            visitors[row[0]]['March'] = row[3]
-            visitors[row[0]]['April'] = row[4]
-            visitors[row[0]]['May'] = row[5]
-            visitors[row[0]]['June'] = row[6]
-            visitors[row[0]]['July'] = row[7]
-            visitors[row[0]]['August'] = row[8]
-            visitors[row[0]]['September'] = row[9]
-            visitors[row[0]]['October'] = row[10]
-            visitors[row[0]]['November'] = row[11]
-            if int(row[0]) < 2018:
+            if len(row) == 14:
+                visitors[row[0]]['January'] = row[1]
+                visitors[row[0]]['February'] = row[2]
+                visitors[row[0]]['March'] = row[3]
+                visitors[row[0]]['April'] = row[4]
+                visitors[row[0]]['May'] = row[5]
+                visitors[row[0]]['June'] = row[6]
+                visitors[row[0]]['July'] = row[7]
+                visitors[row[0]]['August'] = row[8]
+                visitors[row[0]]['September'] = row[9]
+                visitors[row[0]]['October'] = row[10]
+                visitors[row[0]]['November'] = row[11]
                 visitors[row[0]]['December'] = row[12]
                 visitors[row[0]]['Total'] = row[13]
             else:
-                visitors[row[0]]['December'] = row[12] = ''
-                visitors[row[0]]['Total'] = '' 
+                visitors[row[0]]['data_note'] = 'Data was incomplete for this year -- check the url to confirm'
             data_dicts_visitors[park]['park_visitors'].append(visitors)
 
     
@@ -145,7 +147,7 @@ for park in all_ids:
 j = json.dumps(data_dicts_visitors, indent=4)
 #print(j)
 with open('data/all_park_visitors.json', 'w+') as f:
-    print(j, file=f)         
+    print(j, file=f)
 
 
 
