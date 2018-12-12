@@ -19,9 +19,12 @@ for key in visitors.keys():
     #print(park_visitors)
     if park_visitors:
         for year in park_visitors['park_visitors']:
-            year['comments'] = []
-            #print(year)    
-    park_comments = comments.get(key, None)
+            year_key = list(year.keys())[0]
+            # print(year_key)
+            year[year_key]['comments'] = []
+            # print(year)
+            # break
+        park_comments = comments.get(key, None)
     #print(park_comments)
     if park_comments:
         comments_and_visitors[key] = park_visitors
@@ -30,11 +33,16 @@ for key in visitors.keys():
             # print(comment_year)
             # print([c for c in comments_and_visitors[key]['park_visitors']])
             for visitor_year in comments_and_visitors[key]['park_visitors']:
-                if visitor_year == comment_year:
-                    visitor_year[comments].append(comment)
+                real_visitor_year = list(visitor_year.keys())[0]
+                # print(real_visitor_year)
+                if real_visitor_year == comment_year:
+                    visitors_data = visitor_year.get(real_visitor_year, None)
+                    if visitors_data:
+                        print(visitor_year[real_visitor_year]['comments'])
+                        visitor_year[real_visitor_year]['comments'].append(comment)
             # comments_and_visitors[key]['park_visitors'][comment_year]['comments'].append(comment)
 
-pprint(comments_and_visitors)
+# pprint(comments_and_visitors)
 
 j = json.dumps(comments_and_visitors, indent=4)
 #print(j)
